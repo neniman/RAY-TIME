@@ -20,17 +20,17 @@ export default new Router({
       component: Registration,
     },
     {
-      path: '/',
+      path: '/main',
       name: 'main',
       component: () => import('@/components/03_MainPage.vue')
     },
     {
-      path: '/',
+      path: '/profile',
       name: 'profile',
       component: () => import('@/components/04_Profile.vue')
     },
     {
-      path: '/',
+      path: '/appointment',
       name: 'appointment',
       component: () => import('@/components/05_Appointments.vue')
     },

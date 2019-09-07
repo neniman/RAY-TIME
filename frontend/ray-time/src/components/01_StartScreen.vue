@@ -1,6 +1,6 @@
 <template>
     <div class="start-container">
-        <img class="logo" src="@/assets/logo.svg">
+        <img class="logo" src="@/assets/logo.png">
         <button @click="registerClicked" class="sign-up-btn">Sign Up</button>
     </div>
 </template>
@@ -28,6 +28,7 @@ export default Vue.extend({
 }
 .logo {
     width: 100%;
+    padding: 15%;
 }
 
 .sign-up-btn {

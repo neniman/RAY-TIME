@@ -5,12 +5,22 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    patientName: 'Patient'
+    name: 'Patient',
+    surname: '',
+    mobile: '',
+    email: ''
   },
   mutations: {
-
+    setRegisterData(state: any, payload: any) {
+      state.name = payload.name;
+      state.surname = payload.surname;
+      state.email = payload.email;
+      state.email = payload.email;
+    },
   },
-  actions: {
-
+  getters: {
+    getPatientName(state: any) {
+      return state.name;
+    }
   },
 });

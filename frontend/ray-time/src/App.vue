@@ -50,4 +50,35 @@ body {
   height: 100%;
 }
 
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 20px;
+  width: 19%;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.welcome-img, .register-img {
+  width: 100%;
+  margin-top: -37px;
+}
+
+.header-label {
+  position: absolute;
+  top: 26px;
+  left: 70px;
+  height: 34px;
+  font-family: Rubik;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+}
 </style>
