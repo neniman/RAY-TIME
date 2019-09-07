@@ -7,7 +7,7 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
-const socket = io('http://localhost:3010');
+const socket = io(window.location.origin);
 
 Vue.use(VueSocketIOExt, socket, {store});
 

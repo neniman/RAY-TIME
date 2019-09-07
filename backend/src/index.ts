@@ -5,13 +5,15 @@ import * as http from 'http';
 
 const app = express();
 
+const frontendpath = process.env.frontend || '../frontend/ray-time/dist';
+
 let server = new http.Server(app);
 /* set up socket.io and bind it to our
  * http server.
  */
 let io = socketio(server);
 
-app.use(express.static('../frontend/ray-time/dist'))
+app.use(express.static(frontendpath))
 
 /* whenever a user connects on port 3000 via
    a websocket, log that a user has connected
