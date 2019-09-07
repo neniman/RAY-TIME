@@ -59,7 +59,7 @@ export default Vue.extend({
             });
         },
         iconDropdownSrc(path: string) {
-            return require(`@/assets/${path}.svg`);
+            return `@/assets/${path}.svg`;
         }
     }
 });

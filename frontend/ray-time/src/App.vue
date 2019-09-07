@@ -67,6 +67,14 @@ body {
   margin-top: -37px;
 }
 
+.profile-btn, .profile-btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 20px;
+    width: 19%;
+}
+
 .header-label {
   position: absolute;
   top: 26px;

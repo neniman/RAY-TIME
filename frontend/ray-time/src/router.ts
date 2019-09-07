@@ -34,5 +34,20 @@ export default new Router({
       name: 'appointment',
       component: () => import('@/components/05_Appointments.vue')
     },
+    {
+      path: '/history',
+      name: 'history',
+      component: () => import('@/components/06_History.vue')
+    },
+    {
+      path: '/change',
+      name: 'change',
+      component: () => import('@/components/07_ChangeAppointment.vue')
+    },
+    {
+      path: '/onsight',
+      name: 'onsight',
+      component: () => import('@/components/08_OnSight.vue')
+    },
   ],
 });
