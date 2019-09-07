@@ -10,7 +10,7 @@
                 v-bind:key="index"
                 @click.prevent="dropDownClicked(dropdownElement.title)"
             >   
-                <img class="dropdown-element-img" :src="iconDropdownSrc(dropdownElement.icon)"/>
+                <img class="dropdown-element-img" src="@/assets/menu_btn.svg"/>
                 <label class="title">{{ dropdownElement.title }}</label>
             </div>
         </div>
@@ -57,15 +57,25 @@ export default Vue.extend({
             this.$router.push({
                 name: title
             });
-        },
-        iconDropdownSrc(path: string) {
-            return `@/assets/${path}.svg`;
         }
     }
 });
 </script>
 
 <style scoped>
+
+.dropdown-container {
+    top: 60px;
+    left: 20px;
+    position: absolute;
+    height: 30px;
+    background: black;
+    border-radius: 4px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
 .reg-input {
     width: 90%;
     height: 44px;

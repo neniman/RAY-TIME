@@ -49,5 +49,15 @@ export default new Router({
       name: 'onsight',
       component: () => import('@/components/08_OnSight.vue')
     },
+    {
+      path: '/preferences',
+      name: 'preferences',
+      component: () => import('@/components/09_Preferences.vue')
+    },
+    {
+      path: '/scans',
+      name: 'scans',
+      component: () => import('@/components/10_Scans.vue')
+    },
   ],
 });
