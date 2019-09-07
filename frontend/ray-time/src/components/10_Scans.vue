@@ -1,7 +1,6 @@
 <template>
-    <div class="register-container header">
+    <div class="scans-container header">
         <img class="header-img" src="@/assets/header.png">
-        <img class="register-img" src="@/assets/register_img.svg">
         <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
         <div class="dropdown-container" v-if="dropdown">
             <div
@@ -15,12 +14,10 @@
             </div>
         </div>
 
-        <label class="header-label">Registration</label>
-        <input class="reg-input" type="text" placeholder="Name" v-model="name"/>
-        <input class="reg-input" type="text" placeholder="Surname" v-model="surname"/>
-        <input class="reg-input" type="text" placeholder="Mobile" v-model="mobile"/>
-        <input class="reg-input" type="text" placeholder="Email" v-model="email"/>
-        <button @click="signUpClicked" class="sign-up-btn">Sign Up</button>
+        <!-- JONA's VUE TODO: wohoo: insert image capturing function here!! -->
+
+        <label class="header-label">Scan Referral</label>
+        <button @click="scanClicked" class="sign-up-btn">Scan</button>
     </div>
 </template>
 
@@ -29,7 +26,7 @@ import Vue from 'vue';
 import { mapMutations } from 'vuex';
 
 export default Vue.extend({
-    name: 'Register',
+    name: 'Scans',
     data() {
         return {
             name: '',
@@ -42,12 +39,10 @@ export default Vue.extend({
     },
     methods: {
         ...mapMutations(['setRegisterData']),
-        signUpClicked() {
-            (this as any).setRegisterData(
-                { name: this.name, surname: this.surname, mobile: this.mobile, email: this.email }
-            );
+        scanClicked() {
+            // TODO: For you JONAS: first caputre pic then next path!!!
             this.$router.push({
-                name: 'main'
+                name: 'preferences'
             });
         },
         menuClicked() {

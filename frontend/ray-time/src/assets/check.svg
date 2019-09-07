@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="32" height="32" rx="4"></rect>
+        <filter x="-21.9%" y="-15.6%" width="143.8%" height="143.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Registration-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS" transform="translate(-17.000000, -374.000000)">
+            <g id="Group-2-Copy" transform="translate(21.000000, 376.000000)">
+                <g id="Group-4">
+                    <g id="Checkbox">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#754E44" stroke-width="2" stroke-linejoin="square" x="1" y="1" width="30" height="30" rx="4"></rect>
+                    </g>
+                    <g id="Element-4-Copy" transform="translate(2.000000, 0.000000)" stroke="#FFFFFF" stroke-width="3">
+                        <path d="M31,0 C26.3787036,2.13720719 22.2819189,5.18708019 18.9789252,8.94915254 C13.8301159,14.8261799 12.0040885,20.8859452 11.3024236,24 C10.0468083,21.2828325 8.32427902,18.786661 6.20653319,16.6153846 C4.38700335,14.7525662 2.29666642,13.1506984 0,11.8591917" id="Check_hacken"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
