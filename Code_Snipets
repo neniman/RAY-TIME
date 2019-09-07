@@ -67,3 +67,11 @@
   border: solid 1px #979797;
   background-color: #3c3c3c;
 }
+
+.Background_Canvas_colored {
+  width: 375px;
+  height: 812px;
+  object-fit: contain;
+  border: solid 1px #979797;
+  background-image: linear-gradient(21deg, #6a514b, #b85a4b);
+}
