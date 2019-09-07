@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="103px" viewBox="0 0 375 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="112.563438%" y1="39.3031079%" x2="14.6912971%" y2="51.8076068%" id="linearGradient-1">
+            <stop stop-color="#C62D4A" stop-opacity="0.23958946" offset="0%"></stop>
+            <stop stop-color="#C7494D" stop-opacity="0.598119176" offset="0%"></stop>
+            <stop stop-color="#C86851" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,0 L375,0 L375,74.3535897 C312.5,89.4511966 250,97 187.5,97 C125,97 62.5,89.4511966 0,74.3535897 L0,0 Z" id="path-2"></path>
+        <filter x="-1.9%" y="-5.2%" width="103.7%" height="114.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Medical-REferral" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS">
+            <g id="Path-2">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
