@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350px" height="52px" viewBox="0 0 350 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="342" height="44" rx="4"></rect>
+        <filter x="-2.0%" y="-11.4%" width="104.1%" height="131.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Registration-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS" transform="translate(-13.000000, -742.000000)">
+            <g id="Group-3" transform="translate(17.000000, 744.000000)">
+                <g id="Group-2-Copy-2">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#C86851" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <text id="Sign-Up" font-family="Rubik-Regular, Rubik" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <tspan x="142" y="26">Sign Up</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
