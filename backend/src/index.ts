@@ -2,6 +2,7 @@ import * as express from "express";
 import * as socketio from "socket.io";
 import * as path from "path";
 import * as http from 'http';
+import * as history from 'connect-history-api-fallback';
 
 const app = express();
 
@@ -13,7 +14,8 @@ let server = new http.Server(app);
  */
 let io = socketio(server);
 
-app.use(express.static(frontendpath))
+app.use(history());
+app.use('/', express.static(frontendpath));
 
 /* whenever a user connects on port 3000 via
    a websocket, log that a user has connected
