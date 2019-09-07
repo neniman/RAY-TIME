@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="131px" viewBox="0 0 168 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="160" height="123" rx="4"></rect>
+        <filter x="-4.4%" y="-4.1%" width="108.8%" height="111.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M4,0 L160,0 L160,44 C133.333333,48.6666667 106.666667,51 80,51 C53.3333333,51 26.6666667,48.6666667 0,44 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-3"></path>
+        <filter x="-4.4%" y="-9.8%" width="108.8%" height="127.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS" transform="translate(-195.000000, -487.000000)">
+            <g id="Group-2" transform="translate(199.000000, 489.000000)">
+                <g id="Group-2-Copy-2">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#C86851" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <text id="See-Your-History" font-family="Rubik-Regular, Rubik" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <tspan x="46.792" y="79">See Your </tspan>
+                    <tspan x="52.504" y="101">History</tspan>
+                </text>
+                <g id="Path">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#3C3C3C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <path d="M4,0 L156,0 C158.209139,-4.05812251e-16 160,1.790861 160,4 L160,44 C133.333333,48.6666667 106.666667,51 80,51 C53.3333333,51 26.6666667,48.6666667 0,44 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="Path-Copy" fill-opacity="0.4" fill="#C86851"></path>
+            </g>
+        </g>
+    </g>
+</svg>
