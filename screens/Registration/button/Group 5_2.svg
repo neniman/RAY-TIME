@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="351px" height="96px" viewBox="0 0 351 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="-2.84217094e-14" y="0" width="343" height="88" rx="4"></rect>
+        <filter x="-2.0%" y="-5.7%" width="104.1%" height="115.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Registration-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS" transform="translate(-13.000000, -534.000000)">
+            <g id="Group-5" transform="translate(17.000000, 536.000000)">
+                <g id="Canvas_date-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#C86851" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="Hospital-XYZ-|-Locat" font-family="Rubik-Regular, Rubik" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="120" y="71">Hospital XYZ  |  Location 	|  10 km </tspan>
+                </text>
+                <text id="Type-(X-Ray)-Copy-2" font-family="Rubik-Regular, Rubik" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <tspan x="120" y="52">Type (X-Ray)</tspan>
+                </text>
+                <text id="8:30-AM---9:00-AM" font-family="Rubik-Bold, Rubik" font-size="17" font-weight="bold" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <tspan x="120" y="28">8:30 AM - 9:00 AM</tspan>
+                </text>
+                <text id="Date-Copy-2" font-family="Rubik-Regular, Rubik" font-size="30" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="23.995" y="44">02.</tspan>
+                    <tspan x="68.005" y="44" font-size="12"></tspan>
+                    <tspan x="29.1105" y="80" font-family="Rubik-Bold, Rubik" font-size="17" font-weight="bold">SEP</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
