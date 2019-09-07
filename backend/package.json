@@ -14,8 +14,8 @@
     "typescript": "^3.6.2"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/index.ts",
+    "build": "tsc && sh -c \"cd ../frontend/ray-time && npm run build\" && cp -r ../frontend/ray-time/dist build/frontend",
+    "start": "set frontend=./frontend && node build/index.js",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
     "develop": "set debug=* && ts-node-dev --respawn --transpileOnly src/index.ts"
   }
