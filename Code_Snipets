@@ -1,0 +1,69 @@
+.Header {
+  width: 375px;
+  height: 97px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(244deg, rgba(198, 45, 74, 0.24), rgba(199, 73, 77, 0.6), #c86851);
+}
+
+.Lable_Header {
+  width: 163px;
+  height: 34px;
+  font-family: Rubik;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+}
+
+
+.Textfeld {
+  width: 343px;
+  height: 44px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(200, 104, 81, 0.41);
+}
+
+.Lable_Textfeld {
+  width: 44.1px;
+  height: 22px;
+  font-family: Rubik;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: -0.41px;
+  color: #ffffff;
+}
+
+.Button {
+  width: 342px;
+  height: 44px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #c86851;
+}
+
+.Lable_Button {
+  width: 59px;
+  height: 22px;
+  font-family: Rubik;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: -0.41px;
+  color: #ffffff;
+}
+
+.Background_Canvas {
+  width: 375px;
+  height: 812px;
+  border: solid 1px #979797;
+  background-color: #3c3c3c;
+}
