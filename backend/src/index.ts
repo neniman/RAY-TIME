@@ -9,20 +9,9 @@ let server = new http.Server(app);
 /* set up socket.io and bind it to our
  * http server.
  */
-let io = socketio({
-  path: '/communication',
-  serveClient: false,
-});
+let io = socketio(server);
 
-io.attach(server, {
-  pingInterval: 10000,
-  pingTimeout: 5000,
-  cookie: false
-});
-
-//app.get("/", (req: any, res: any) => {
-//	res.sendFile(path.resolve("./client/index.html"));
-//});
+app.use(express.static('../frontend/ray-time/dist'))
 
 /* whenever a user connects on port 3000 via
    a websocket, log that a user has connected
