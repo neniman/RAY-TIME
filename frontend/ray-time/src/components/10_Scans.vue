@@ -57,18 +57,26 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
+<style>
 
 .dropdown-container {
     top: 60px;
     left: 20px;
     position: absolute;
     height: 30px;
-    background: black;
+    background: #ffffff;
     border-radius: 4px;
     padding: 3px;
     display: flex;
     justify-content: center;
+    font-family: Rubik;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: -0.41px;
+    color: #acacac;
 }
 
 .reg-input {

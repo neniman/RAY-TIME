@@ -109,4 +109,75 @@ body {
   letter-spacing: 0.36px;
   color: #ffffff;
 }
+
+.check-label {
+  font-family: Rubik;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: -0.41px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.headline-label {
+  font-family: Rubik;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: -0.41px;
+  color: #ffffff;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.check-el {
+  height: 40px;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #b3ccd0, #c86851);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #754e44;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #754e44;
+  cursor: pointer;
+}
+
+.header-box {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
 </style>

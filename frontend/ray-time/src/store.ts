@@ -5,10 +5,11 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    name: 'Patient',
-    surname: '',
+    name: 'Jonas',
+    surname: 'Fingerling',
     mobile: '',
-    email: ''
+    email: '',
+    hasAppointment: true
   },
   mutations: {
     setRegisterData(state: any, payload: any) {
@@ -21,6 +22,12 @@ export default new Vuex.Store({
   getters: {
     getPatientName(state: any) {
       return state.name;
+    },
+    hasAppointment(state: any) {
+      return state.hasAppointment;
+    },
+    getFullName(state: any) {
+      return `${state.name} ${state.surname}`;
     }
   },
 });

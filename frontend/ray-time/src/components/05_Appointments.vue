@@ -83,30 +83,9 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-.check-el {
-    height: 50px;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
+<style>
 .check-img {
     object-fit: contain;
     height: 100%;
-}
-
-.check-label {
-    font-family: Rubik;
-    font-size: 17px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.29;
-    letter-spacing: -0.41px;
-    color: #ffffff;
-    padding-left: 10px;
 }
 </style>

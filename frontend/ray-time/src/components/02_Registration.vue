@@ -11,7 +11,7 @@
                 @click.prevent="dropDownClicked(dropdownElement.title)"
             >   
                 <img class="dropdown-element-img" src="@/assets/menu_btn.svg"/>
-                <label class="title">{{ dropdownElement.title }}</label>
+                <label class="title">{{ dropdownElement.key }}</label>
             </div>
         </div>
 
@@ -37,7 +37,7 @@ export default Vue.extend({
             mobile: '',
             email: '',
             dropdown: false,
-            dropdownOptions: [{title: 'home', icon: 'user'}]
+            dropdownOptions: [{key: 'home', title: 'home', icon: 'user'}]
         };
     },
     methods: {
@@ -53,27 +53,34 @@ export default Vue.extend({
         menuClicked() {
             this.dropdown = !this.dropdown;
         },
-        dropDownClicked(title: string) {
+        dropDownClicked(key: string) {
             this.$router.push({
-                name: title
+                name: key
             });
         }
     }
 });
 </script>
 
-<style scoped>
+<style>
 
 .dropdown-container {
     top: 60px;
     left: 20px;
     position: absolute;
     height: 30px;
-    background: black;
-    border-radius: 4px;
+    background: #ffffff;
     padding: 3px;
     display: flex;
     justify-content: center;
+    font-family: Rubik;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: -0.41px;
+    color: #acacac;
 }
 
 .reg-input {
