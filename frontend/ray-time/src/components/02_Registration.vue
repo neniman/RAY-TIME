@@ -1,67 +1,71 @@
 <template>
     <div class="register-container header">
         <img class="header-img" src="@/assets/header.png">
-        <img class="register-img" src="@/assets/register_img.png">
-        <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.png">
-        <label class="register-label">Registration</label>
-        <input class="reg-input" type="text" placeholder="Name"/>
-        <input class="reg-input" type="text" placeholder="Surname"/>
-        <input class="reg-input" type="text" placeholder="Mobile"/>
-        <input class="reg-input" type="text" placeholder="Email"/>
+        <img class="register-img" src="@/assets/register_img.svg">
+        <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
+        <div class="dropdown-container" v-if="dropdown">
+            <div
+                class="dropdown-element"
+                v-for="(dropdownElement, index) in dropdownOptions"
+                v-bind:key="index"
+                @click.prevent="dropDownClicked(dropdownElement.title)"
+            >   
+                <img class="dropdown-element-img" :src="iconDropdownSrc(dropdownElement.icon)"/>
+                <label class="title">{{ dropdownElement.title }}</label>
+            </div>
+        </div>
+
+        <label class="header-label">Registration</label>
+        <input class="reg-input" type="text" placeholder="Name" v-model="name"/>
+        <input class="reg-input" type="text" placeholder="Surname" v-model="surname"/>
+        <input class="reg-input" type="text" placeholder="Mobile" v-model="mobile"/>
+        <input class="reg-input" type="text" placeholder="Email" v-model="email"/>
         <button @click="signUpClicked" class="sign-up-btn">Sign Up</button>
     </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import { mapMutations } from 'vuex';
+
 export default Vue.extend({
     name: 'Register',
+    data() {
+        return {
+            name: '',
+            surname: '',
+            mobile: '',
+            email: '',
+            dropdown: false,
+            dropdownOptions: [{title: 'home', icon: 'user'}]
+        };
+    },
     methods: {
+        ...mapMutations(['setRegisterData']),
         signUpClicked() {
+            (this as any).setRegisterData(
+                { name: this.name, surname: this.surname, mobile: this.mobile, email: this.email }
+            );
             this.$router.push({
                 name: 'main'
             });
         },
         menuClicked() {
-            // TODO: what happens -> modal? dropdown?
+            this.dropdown = !this.dropdown;
+        },
+        dropDownClicked(title: string) {
+            this.$router.push({
+                name: title
+            });
+        },
+        iconDropdownSrc(path: string) {
+            return `@/assets/${path}.svg`;
         }
     }
 });
 </script>
 
 <style scoped>
-.header-img {
-    width: 100%;
-}
-
-.register-img {
-    width: 100%;
-    margin-top: -35px;
-}
-
-.menu-btn {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    padding: 20px;
-    width: 19%;
-}
-
-.register-label {
-    position: absolute;
-    top: 26px;
-    left: 70px;
-    height: 34px;
-    font-family: Rubik;
-    font-size: 28px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.21;
-    letter-spacing: 0.36px;
-    color: #ffffff;
-}
-
 .reg-input {
     width: 90%;
     height: 44px;

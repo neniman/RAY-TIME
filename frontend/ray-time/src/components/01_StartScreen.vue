@@ -1,7 +1,8 @@
 <template>
     <div class="start-container">
-        <img class="logo" src="@/assets/logo.svg">
+        <img class="logo" src="@/assets/logo.png">
         <button @click="registerClicked" class="sign-up-btn">Sign Up</button>
+        <label class="label-start">Save the time of your life.</label>
     </div>
 </template>
 
@@ -28,6 +29,7 @@ export default Vue.extend({
 }
 .logo {
     width: 100%;
+    padding: 15%;
 }
 
 .sign-up-btn {
@@ -48,5 +50,16 @@ export default Vue.extend({
     letter-spacing: -0.41px;
     color: #ffffff;
     border: none;
+}
+
+.label-start {
+    font-family: Rubik;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: -0.41px;
+    color: #ffffff;
 }
 </style>

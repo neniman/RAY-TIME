@@ -20,19 +20,34 @@ export default new Router({
       component: Registration,
     },
     {
-      path: '/',
+      path: '/main',
       name: 'main',
       component: () => import('@/components/03_MainPage.vue')
     },
     {
-      path: '/',
+      path: '/profile',
       name: 'profile',
       component: () => import('@/components/04_Profile.vue')
     },
     {
-      path: '/',
+      path: '/appointment',
       name: 'appointment',
       component: () => import('@/components/05_Appointments.vue')
+    },
+    {
+      path: '/history',
+      name: 'history',
+      component: () => import('@/components/06_History.vue')
+    },
+    {
+      path: '/change',
+      name: 'change',
+      component: () => import('@/components/07_ChangeAppointment.vue')
+    },
+    {
+      path: '/onsight',
+      name: 'onsight',
+      component: () => import('@/components/08_OnSight.vue')
     },
   ],
 });
