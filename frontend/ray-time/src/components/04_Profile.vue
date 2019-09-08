@@ -17,11 +17,19 @@
         <label class="header-label">Profile</label>
 
         <div class="profile-header">
-            <div class="header-box">
-                <img class="profile-img" src="@/assets/user_female.svg"/>
-                <label class="headline-label">{{ $store.getters.getFullName }}</label>
+            <div class="header-box" style="    justify-content: center;
+    align-content: center;
+    align-items: center;">
+                <div class="picc" style="width: 40%; text-align: center;">
+                    <img class="profile-img" src="@/assets/user_female.svg"/>
+                </div>
+                <div class="boxx" style="width: 60%;     display: flex;
+    flex-wrap: wrap;">
+                    <label class="headline-label">{{ $store.getters.getFullName }}</label>
+                    <label class="headline-label">29-07-92</label>
+                    <label class="headline-label">MALE</label>
+                </div>
 
-                <img class="small-img" src="@/assets/user_fem.svg">
             </div>
         </div>
 

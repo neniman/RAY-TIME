@@ -1,24 +1,8 @@
 <template>
-    <div class="scans-container header">
-        <img class="header-img" src="@/assets/header.png">
-        <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
-        <div class="dropdown-container" v-if="dropdown">
-            <div
-                class="dropdown-element"
-                v-for="(dropdownElement, index) in dropdownOptions"
-                v-bind:key="index"
-                @click.prevent="dropDownClicked(dropdownElement.title)"
-            >   
-                <img class="dropdown-element-img" src="@/assets/menu_btn.svg"/>
-                <label class="title">{{ dropdownElement.title }}</label>
-            </div>
-        </div>
-
-        <img class="photo-img" src="@/assets/photo.png">
-        <!-- JONA's VUE TODO: wohoo: insert image capturing function here!! -->
-
-        <label class="header-label">Scan Referral</label>
-        <button @click="scanClicked" class="sign-up-btn">Scan</button>
+    <div class="start-container">
+        
+        <img style="padding: 10%;  width: 100%;" src="@/assets/ray_text.svg">
+        <button @click="removeClicked" class="sign-up-btn">Done</button>
     </div>
 </template>
 
@@ -27,7 +11,7 @@ import Vue from 'vue';
 import { mapMutations } from 'vuex';
 
 export default Vue.extend({
-    name: 'Scans',
+    name: 'Register',
     data() {
         return {
             name: '',
@@ -35,30 +19,38 @@ export default Vue.extend({
             mobile: '',
             email: '',
             dropdown: false,
-            dropdownOptions: [{title: 'home', icon: 'user'}]
+            dropdownOptions: [{key: 'home', title: 'home', icon: 'user'}]
         };
     },
     methods: {
-        ...mapMutations(['setRegisterData']),
-        scanClicked() {
-            // TODO: For you JONAS: first caputre pic then next path!!!
+        ...mapMutations(['setAppointment']),
+        moreInfoClicked() {
             this.$router.push({
-                name: 'preferences'
+                name: 'moreInfo'
             });
         },
-        menuClicked() {
-            this.dropdown = !this.dropdown;
-        },
-        dropDownClicked(title: string) {
+        addClicked() {
+            (this as any).setAppointment(true);
             this.$router.push({
-                name: title
+                name: 'main'
             });
-        }
+        },
+        removeClicked() {
+            (this as any).setAppointment(false);
+            this.$router.push({
+                name: 'main'
+            });
+            }
     }
 });
 </script>
 
 <style>
+.start-container {
+    background-image: linear-gradient(21deg, #6a514b, #b85a4b);
+    border: none;
+    height: 100%;
+}
 
 .dropdown-container {
     top: 60px;
@@ -66,7 +58,6 @@ export default Vue.extend({
     position: absolute;
     height: 30px;
     background: #ffffff;
-    border-radius: 4px;
     padding: 3px;
     display: flex;
     justify-content: center;
@@ -135,11 +126,5 @@ export default Vue.extend({
     letter-spacing: -0.41px;
     color: #ffffff;
     border: none;
-}
-
-.photo-img {
-    object-fit: contain;
-    width: 100%;
-    padding: 10% 5% 5% 5%;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="proposed-container header">
+    <div class="register-container header">
         <img class="header-img" src="@/assets/header.png">
         <img class="register-img" src="@/assets/register_img.svg">
         <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
@@ -15,13 +15,10 @@
             </div>
         </div>
 
-        <label class="header-label">Proposed Dates</label>
-        <img class="date" style="margin-top: 5%;" @click="date1 = !date1" :src="date1 ? date1_1 : date1_0">
-        <img class="date" @click="date2 = !date2" :src="date2 ? date2_1 : date2_0">
-        <img class="date" @click="date3 = !date3" :src="date3 ? date3_1 : date3_0">
-        <img class="date" @click="date4 = !date4" :src="date4 ? date4_1 : date4_0">
+        <label class="header-label">Information</label>
+        <img class="photo-img" src="@/assets/info_last.png">        
         
-        <button @click="signUpClicked" class="sign-up-btn">Select Date</button>
+        <button @click="signUpClicked" class="sign-up-btn">I have read understood and agree</button>
     </div>
 </template>
 
@@ -30,7 +27,7 @@ import Vue from 'vue';
 import { mapMutations } from 'vuex';
 
 export default Vue.extend({
-    name: 'ProposedDate',
+    name: 'Information',
     data() {
         return {
             name: '',
@@ -38,26 +35,17 @@ export default Vue.extend({
             mobile: '',
             email: '',
             dropdown: false,
-            dropdownOptions: [{key: 'home', title: 'home', icon: 'user'}],
-            date1: false,
-            date2: false,
-            date3: false,
-            date4: false,
-            date1_0: require('@/assets/date_1_not.svg'),
-            date1_1: require('@/assets/date_1_select.svg'),
-            date2_0: require('@/assets/date_2_not.svg'),
-            date2_1: require('@/assets/date_2_select.svg'),
-            date3_0: require('@/assets/date_3_not.svg'),
-            date3_1: require('@/assets/date_3_select.svg'),
-            date4_0: require('@/assets/date4_not.svg'),
-            date4_1: require('@/assets/date4_select.svg'),
+            dropdownOptions: [{key: 'main', title: 'Home', icon: 'user'}]
         };
     },
     methods: {
-        ...mapMutations(['setAppointment']),
+        ...mapMutations(['setRegisterData']),
         signUpClicked() {
+            (this as any).setRegisterData(
+                { name: this.name, surname: this.surname, mobile: this.mobile, email: this.email }
+            );
             this.$router.push({
-                name: 'ray'
+                name: 'main'
             });
         },
         menuClicked() {
@@ -67,7 +55,7 @@ export default Vue.extend({
             this.$router.push({
                 name: key
             });
-        },
+        }
     }
 });
 </script>

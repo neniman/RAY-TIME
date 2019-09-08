@@ -1,7 +1,9 @@
 <template>
     <div class="main-contaienr">
         <img class="header-img" src="@/assets/header.png">
-        <img class="welcome-img" src="@/assets/ray_green.svg">
+        <img style="    width: 105%;
+    margin-left: -10px;
+    margin-top: -39px;" src="@/assets/ray_green.svg">
         <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
         <img @click="profileClicked" class="profile-btn" src="@/assets/user.svg">
         <label class="header-label">Welcome {{ $store.getters.getPatientName }}</label>
@@ -40,20 +42,20 @@ export default Vue.extend({
                     });
                     break;
                 case 'onsight':
+                    break;
                     this.$router.push({
                         name: 'onsight'
                     });
-                    break;
                 case 'change':
+                    break;
                     this.$router.push({
                         name: 'change'
                     });
-                    break;
                 case 'history':
+                    break;
                     this.$router.push({
                         name: 'history'
                     });
-                    break;
                 default:
                     break;
             }

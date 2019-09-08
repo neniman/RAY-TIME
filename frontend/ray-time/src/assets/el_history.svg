@@ -27,7 +27,7 @@
                             <use fill="#C86851" fill-rule="evenodd" xlink:href="#path-1"></use>
                         </g>
                     </g>
-                    <text id="See-Your-History" font-family="Rubik-Regular, Rubik" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <text id="See-Your-History" font-family="Rubik-Regular, Rubik, sans-serif" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
                         <tspan x="46.792" y="81.7642276">See Your </tspan>
                         <tspan x="52.504" y="103.764228">History</tspan>
                     </text>

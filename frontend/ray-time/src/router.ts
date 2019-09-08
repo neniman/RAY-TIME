@@ -69,5 +69,15 @@ export default new Router({
       name: 'ray',
       component: () => import('@/components/12_Raytime.vue')
     },
+    {
+      path: '/info',
+      name: 'moreInfo',
+      component: () => import('@/components/13_Info.vue')
+    },
+    {
+      path: '/estimation',
+      name: 'estimation',
+      component: () => import('@/components/14_Estimation.vue')
+    },
   ],
 });

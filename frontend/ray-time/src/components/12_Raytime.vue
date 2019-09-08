@@ -1,7 +1,7 @@
 <template>
     <div class="start-container">
         
-        <img src="@/assets/ray_text.svg">
+        <img style="padding: 10%;  width: 100%;" src="@/assets/ray_text.svg">
         <button @click="moreInfoClicked" class="sign-up-btn" style="bottom: 17%;">More Information</button>
         <button @click="addClicked" class="sign-up-btn" style="bottom: 10%;">Add to Calender</button>
         <button @click="removeClicked" class="sign-up-btn">Cancel</button>
@@ -34,7 +34,7 @@ export default Vue.extend({
         addClicked() {
             (this as any).setAppointment(true);
             this.$router.push({
-                name: 'main'
+                name: 'estimation'
             });
         },
         removeClicked() {

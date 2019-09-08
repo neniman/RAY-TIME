@@ -185,4 +185,10 @@ body {
     width: 100%;
     padding: 15%;
 }
+
+.photo-img {
+    object-fit: contain;
+    width: 100%;
+    padding: 10% 5% 5% 5%;
+}
 </style>
