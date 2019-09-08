@@ -90,7 +90,9 @@ export default Vue.extend({
             this.dropdown = !this.dropdown;
         },
         nextClicked() {
-            // TODO
+            this.$router.push({
+                name: 'proposed'
+            });
         },
         dropDownClicked(title: string) {
             this.$router.push({

@@ -9,7 +9,7 @@ export default new Vuex.Store({
     surname: 'Fingerling',
     mobile: '',
     email: '',
-    hasAppointment: true
+    hasAppointment: false
   },
   mutations: {
     setRegisterData(state: any, payload: any) {
@@ -18,6 +18,9 @@ export default new Vuex.Store({
       state.email = payload.email;
       state.email = payload.email;
     },
+    setAppointment(state, payload) {
+      state.hasAppointment = payload;
+    }
   },
   getters: {
     getPatientName(state: any) {
