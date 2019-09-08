@@ -2,6 +2,17 @@
     <div class="preferences-contaienr">
         <img class="header-img" src="@/assets/header.png">
         <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
+        <div class="dropdown-container" v-if="dropdown">
+            <div
+                class="dropdown-element"
+                v-for="(dropdownElement, index) in dropdownOptions"
+                v-bind:key="index"
+                @click.prevent="dropDownClicked(dropdownElement.title)"
+            >   
+                <img class="dropdown-element-img" src="@/assets/menu_btn.svg"/>
+                <label class="title">{{ dropdownElement.title }}</label>
+            </div>
+        </div>
         <label class="header-label">Preferences</label>
         <div class="header-box">
             <p class="description">Adding more flexibility regarding location and time will lead to an earlier appointment.</p>
@@ -69,15 +80,22 @@ export default Vue.extend({
             bikeChecked: false,
             walkingChecked: false,
             iconCheckedPath: require('@/assets/check.svg'),
-            iconUncheckedPath: require('@/assets/unchecked.svg')
+            iconUncheckedPath: require('@/assets/unchecked.svg'),
+            dropdown: false,
+            dropdownOptions: [{title: 'main', icon: 'user'}]
         };
     },
     methods: {
         menuClicked() {
-            // TODO
+            this.dropdown = !this.dropdown;
         },
         nextClicked() {
             // TODO
+        },
+        dropDownClicked(title: string) {
+            this.$router.push({
+                name: title
+            });
         },
         clickCheckbox(box: string) {
             switch (box) {
@@ -110,15 +128,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-.check-el {
-    height: 50px;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
+<style>
+
 
 .check-img {
     object-fit: contain;
@@ -168,38 +179,6 @@ export default Vue.extend({
 .small {
     width: 50%;
     margin: 0;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 25px;
-    border-radius: 4px;
-    background: linear-gradient(90deg, #b3ccd0, #c86851);
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #754e44;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #754e44;
-  cursor: pointer;
 }
 
 .text-km {

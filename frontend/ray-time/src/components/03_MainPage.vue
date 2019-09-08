@@ -5,6 +5,9 @@
         <img @click="menuClicked" class="menu-btn" src="@/assets/menu_btn.svg">
         <img @click="profileClicked" class="profile-btn" src="@/assets/user.svg">
         <label class="header-label">Welcome {{ $store.getters.getPatientName }}</label>
+        <div v-if="$store.getters.hasAppointment" class="">
+            <img class="appointment-img" src="@/assets/user.svg">
+        </div>
         <div class="elements">
             <img @click="elementClicked('new-appointment')" class="element-img" src="@/assets/el_new_appointment.svg">
             <img @click="elementClicked('history')" class="element-img" src="@/assets/el_history.svg">
@@ -24,7 +27,9 @@ export default Vue.extend({
             // TODO
         },
         profileClicked() {
-            // TODO
+            this.$router.push({
+                name: 'profile'
+            });
         },
         elementClicked(element: string) {
             switch (element) {

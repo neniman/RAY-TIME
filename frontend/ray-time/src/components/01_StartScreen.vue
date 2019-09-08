@@ -1,6 +1,6 @@
 <template>
     <div class="start-container">
-        <img class="logo" src="@/assets/logo.png">
+        <img class="logo" src="@/assets/logo.svg">
         <button @click="registerClicked" class="sign-up-btn">Sign Up</button>
         <label class="label-start">Save the time of your life.</label>
     </div>
