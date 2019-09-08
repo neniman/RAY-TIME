@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="392px" viewBox="0 0 323 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="raytime" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Rubik-Regular, Rubik" font-weight="normal" line-spacing="34">
+        <g id="iPhone-XS" transform="translate(-26.000000, -39.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(15.500000, 33.000000)">
+                <text id="YOUR-RaY-Time" font-size="28" letter-spacing="0.363999993">
+                    <tspan x="67.326" y="26">YOUR RaY-Time</tspan>
+                </text>
+                <text id="TUE-26.-AUG" font-size="55" letter-spacing="0.714999985">
+                    <tspan x="0" y="160.416046">TUE 26. AUG</tspan>
+                    <tspan x="318.942" y="144" font-size="73" letter-spacing="0.948999981"> </tspan>
+                </text>
+                <text id="11:00-AM" font-size="55" letter-spacing="0.714999985">
+                    <tspan x="59.5" y="205">11:00 AM</tspan>
+                </text>
+                <text id="@-DR.-HART-RAYCLINIK" font-size="28" letter-spacing="0.363999993">
+                    <tspan x="91.942" y="294">@ DR. HART</tspan>
+                    <tspan x="100.412" y="328">RAYCLINIK</tspan>
+                    <tspan x="52.7560001" y="362">LEONARDPLATZ 7</tspan>
+                    <tspan x="91.578" y="396">80804 MUC</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

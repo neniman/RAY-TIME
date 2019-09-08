@@ -27,10 +27,6 @@ export default Vue.extend({
     border: none;
     height: 100%;
 }
-.logo {
-    width: 100%;
-    padding: 15%;
-}
 
 .label-start {
     font-family: Rubik;

@@ -59,5 +59,15 @@ export default new Router({
       name: 'scans',
       component: () => import('@/components/10_Scans.vue')
     },
+    {
+      path: '/proposed',
+      name: 'proposed',
+      component: () => import('@/components/11_ProposedDate.vue')
+    },
+    {
+      path: '/ray',
+      name: 'ray',
+      component: () => import('@/components/12_Raytime.vue')
+    },
   ],
 });

@@ -23,7 +23,7 @@ export default Vue.extend({
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html {
@@ -179,5 +179,10 @@ body {
     width: 100%;
     text-align: left;
     padding: 10px;
+}
+
+.logo {
+    width: 100%;
+    padding: 15%;
 }
 </style>
