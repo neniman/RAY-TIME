@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="488px" viewBox="0 0 342 488" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="11.3327032%" y1="50%" x2="96.1369236%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#B3CCD0" offset="0%"></stop>
+            <stop stop-color="#C86851" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="estimatedtime" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS" transform="translate(-16.000000, -40.000000)">
+            <g id="Group" transform="translate(16.000000, 33.000000)">
+                <text id="ESTIMATED-TIME-OF-EX" font-family="Rubik-Regular, Rubik, sans-serif" font-size="28" font-weight="normal" line-spacing="34" letter-spacing="0.363999993" fill="#FFFFFF">
+                    <tspan x="59.4060001" y="26">ESTIMATED TIME</tspan>
+                    <tspan x="57.0260001" y="60">OF EXAMINATION</tspan>
+                </text>
+                <text id="THIS-ESTIMATION-IS-B" font-family="Rubik-Regular, Rubik, sans-serif" font-size="28" font-weight="normal" line-spacing="34" letter-spacing="0.363999993" fill="#FFFFFF">
+                    <tspan x="56.4540001" y="391">THIS ESTIMATION</tspan>
+                    <tspan x="45.8140001" y="425">IS BASED ON YOUR </tspan>
+                    <tspan x="41.9500001" y="459">PROFILE AND YOUR </tspan>
+                    <tspan x="37.3720001" y="493">PERSONAL HISTORY</tspan>
+                </text>
+                <text id="47-min" font-family="Rubik-Regular, Rubik, sans-serif" font-size="73" font-weight="normal" line-spacing="34" letter-spacing="0.948999981" fill="#FFFFFF">
+                    <tspan x="57" y="319">47 min</tspan>
+                </text>
+                <rect id="Anxiety_bar" fill="url(#linearGradient-1)" x="0" y="127" width="342" height="44" rx="9.5"></rect>
+                <rect id="Rectangle" fill-opacity="0.43" fill="#3C3C3C" x="146" y="127" width="6" height="44"></rect>
+                <text id="30" font-family="Rubik-Regular, Rubik" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <tspan x="138" y="121">30</tspan>
+                </text>
+                <text id="75" font-family="Rubik-Regular, Rubik" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                    <tspan x="322" y="121">75</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

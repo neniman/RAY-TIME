@@ -17,7 +17,7 @@
         <label class="header-label">Profile</label>
 
         <div class="profile-header">
-            <div class="header-box" style="    justify-content: center;
+            <div class="header-box" style="       display: flex; justify-content: center;
     align-content: center;
     align-items: center;">
                 <div class="picc" style="width: 40%; text-align: center;">
