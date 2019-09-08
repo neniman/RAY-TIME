@@ -64,6 +64,17 @@ export default Vue.extend({
             this.dropdown = !this.dropdown;
         },
         dropDownClicked(key: string) {
+            let date = 0;
+            if(this.date1){
+                date = 1;
+            } else if (this.date2) {
+                date = 2;
+            } else if (this.date3) {
+                date = 4;
+            } else if (this.date4) {
+                date = 5;
+            }
+            this.$socket.client.emit('newPatient', date);
             this.$router.push({
                 name: key
             });
