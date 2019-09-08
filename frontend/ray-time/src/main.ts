@@ -7,7 +7,7 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
-const socket = io(window.location.origin);
+const socket = io('https://ray-team.finger-ling.de');
 
 Vue.use(VueSocketIOExt, socket, {store});
 
