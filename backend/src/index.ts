@@ -27,9 +27,9 @@ io.on("connection", function(socket: socketio.Socket) {
 		console.log("new delay", time);
 		socket.broadcast.emit("appointment update", time);
 	});
-	socket.on("new patient", (data) =>{
+	socket.on("newPatient", (data) =>{
 		console.log("new patient", data);
-		socket.broadcast.emit("new patient", data);
+		socket.broadcast.emit("newPatient", data);
 	});
 });
 
